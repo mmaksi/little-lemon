@@ -1,0 +1,72 @@
+.hero {
+  background-color: #495e57;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 10rem;
+  gap: 50px;
+}
+
+.description__title {
+    font-size: 56px;
+    color: #f4ce14;
+}
+
+.description__subtitle {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.description__text {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.description__button {
+    font-size: 18px;
+    background-color: #f4ce14;
+    color: #495e57;
+    border-radius: 8px;
+    border-color: #f4ce14;
+    padding: 10px 20px;
+    margin-top: 40px;
+}
+
+.hero__img {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero__image {
+    width: 250px;
+    height: 300px;
+    background-image: url("https://media.gettyimages.com/id/1295387240/it/foto/pasto-delizioso.jpg?s=612x612&w=gi&k=20&c=O0blp2WXGBTDG93NYyGsR6JGrYVkn8Nq0yxEL81k17s=");
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+    top: 50px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-wrap: nowrap; /* keeps the flex items on a single line */
+    flex-direction: column; /* make the child-element1 and child-element2 in one column */
+    padding: 1rem 2rem;
+  }
+  .hero__description,
+  .hero__img {
+    flex: 1; /* makes the elements take up equal space */
+  }
+
+  .hero__img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .hero__image {
+    position: static;
+  }
+}
+

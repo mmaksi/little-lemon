@@ -16,25 +16,25 @@ const Navbar = () => {
       <FaBars className="navbar__menu-icon" onClick={toggleMenu} />
       <ul className={`navbar__menu ${showMenu ? 'show' : ''}`}>
         <li className="navbar__menu-item">
-          <a to="/">Home</a>
+          <a href="/">Home</a>
         </li>
         <li className="navbar__menu-item">
-          <a to="/about">About</a>
+          <a href="/about">About</a>
         </li>
         <li className="navbar__menu-item">
-          <a to="/services">Services</a>
+          <a href="/services">Services</a>
         </li>
         <li className="navbar__menu-item">
-          <a to="/products">Products</a>
+          <a href="/products">Products</a>
         </li>
         <li className="navbar__menu-item">
-          <a to="/blog">Blog</a>
+          <a href="/blog">Blog</a>
         </li>
         <li className="navbar__menu-item">
-          <a to="/contact">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
         <li className="navbar__menu-item">
-          <a to="/login">Login</a>
+          <a href="/login">Login</a>
         </li>
       </ul>
     </nav>
