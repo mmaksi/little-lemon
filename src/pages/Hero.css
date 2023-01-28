@@ -1,7 +1,7 @@
 :root {
   --primary: #f4ce14;
   --secondary: #495e57;
-  --white: #ffffff
+  --white: #ffffff;
 }
 
 .hero {
@@ -13,47 +13,48 @@
 }
 
 .description__title {
-    font-size: 56px;
-    color: var(--primary);
-    font-weight: bold;
+  font-size: 56px;
+  color: var(--primary);
+  font-weight: bold;
 }
 
 .description__subtitle {
-    font-size: 32px;
-    color: var(--white);
+  font-size: 32px;
+  color: var(--white);
+  font-weight: bold;
 }
 
 .description__text {
-    font-size: 20px;
-    color: var(--white);
-    margin-top: 20px;
+  font-size: 20px;
+  color: var(--white);
+  margin-top: 20px;
 }
 
 .description__button {
-    font-size: 18px;
-    background-color: var(--primary);
-    color: var(--secondary);
-    border-radius: 8px;
-    border-color: var(--primary);
-    padding: 10px 20px;
-    margin-top: 40px;
-    font-weight: bold;
+  font-size: 18px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-radius: 8px;
+  border-color: var(--primary);
+  padding: 10px 20px;
+  margin-top: 40px;
+  font-weight: bold;
 }
 
 .hero__img {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hero__image {
-    width: 250px;
-    height: 300px;
-    background-image: url("https://media.gettyimages.com/id/1295387240/it/foto/pasto-delizioso.jpg?s=612x612&w=gi&k=20&c=O0blp2WXGBTDG93NYyGsR6JGrYVkn8Nq0yxEL81k17s=");
-    background-position: center;
-    position: relative;
-    border-radius: 8px;
-    top: 50px;
+  width: 250px;
+  height: 300px;
+  background-image: url("https://media.gettyimages.com/id/1295387240/it/foto/pasto-delizioso.jpg?s=612x612&w=gi&k=20&c=O0blp2WXGBTDG93NYyGsR6JGrYVkn8Nq0yxEL81k17s=");
+  background-position: center;
+  position: relative;
+  border-radius: 8px;
+  top: 50px;
 }
 
 @media (max-width: 768px) {
@@ -68,13 +69,12 @@
   }
 
   .hero__img {
-      width: 100%;
-      display: flex;
-      justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
-  
+
   .hero__image {
     position: static;
   }
 }
-

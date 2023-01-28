@@ -1,0 +1,34 @@
+.about {
+  padding: 8rem 10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.about__subtitle {
+  color: var(--secondary) !important;
+}
+
+.about__text {
+    color: black !important;
+}
+
+.about__images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    align-items: center;
+}
+
+.about__image1, .about__image2 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about__image1 {
+    position: relative;
+    bottom: 20%;
+    right: -60%;
+    z-index: -1;
+}
