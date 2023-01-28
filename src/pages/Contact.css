@@ -1,0 +1,25 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* keeps the flex items on a single line */
+  justify-content: space-between;
+  background-color: var(--secondary);
+  padding: 16px 160px;
+  gap: 32px;
+}
+
+.contact img {
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-wrap: wrap; /* keeps the flex items on a single line */
+    flex-direction: column; /* make the child-element1 and child-element2 in one column */
+    padding: 50px 32px 32px 32px;
+  }
+
+  .contact img {
+    display: none;
+  }
+}

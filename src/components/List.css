@@ -1,0 +1,20 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.list-header {
+    margin: 0;
+    color: white;
+}
+
+.list-links {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.list-links * {
+    margin: 3px 0;
+}
