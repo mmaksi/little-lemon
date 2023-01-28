@@ -2,7 +2,7 @@
   padding: 8rem 10rem;
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 32px;
 }
 
 .about__subtitle {
@@ -31,4 +31,20 @@
     bottom: 20%;
     right: -60%;
     z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 50px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about__image1 {
+        display: none;
+    }
+
+    .about__image2 {
+        width: calc(200% + 50px);
+    }
 }

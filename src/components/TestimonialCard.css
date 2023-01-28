@@ -29,3 +29,10 @@
 .testimonialCard-user img {
   width: 80px;
 }
+
+@media (max-width: 768px) {
+  .testimonialCard {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
