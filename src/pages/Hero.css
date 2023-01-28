@@ -1,5 +1,11 @@
+:root {
+  --primary: #f4ce14;
+  --secondary: #495e57;
+  --white: #ffffff
+}
+
 .hero {
-  background-color: #495e57;
+  background-color: var(--secondary);
   display: flex;
   flex-direction: row;
   padding: 1rem 10rem;
@@ -8,28 +14,30 @@
 
 .description__title {
     font-size: 56px;
-    color: #f4ce14;
+    color: var(--primary);
+    font-weight: bold;
 }
 
 .description__subtitle {
     font-size: 32px;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .description__text {
     font-size: 20px;
-    color: #ffffff;
+    color: var(--white);
     margin-top: 20px;
 }
 
 .description__button {
     font-size: 18px;
-    background-color: #f4ce14;
-    color: #495e57;
+    background-color: var(--primary);
+    color: var(--secondary);
     border-radius: 8px;
-    border-color: #f4ce14;
+    border-color: var(--primary);
     padding: 10px 20px;
     margin-top: 40px;
+    font-weight: bold;
 }
 
 .hero__img {
