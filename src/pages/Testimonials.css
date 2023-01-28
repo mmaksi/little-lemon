@@ -1,0 +1,23 @@
+:root {
+  --primary: #f4ce14;
+  --secondary: #495e57;
+  --white: #ffffff;
+}
+
+.testimonials {
+  background-color: var(--secondary);
+  padding: 50px;
+}
+
+.testimonials > h1 {
+  color: white;
+  text-align: center;
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10rem 50px 10rem;
+}

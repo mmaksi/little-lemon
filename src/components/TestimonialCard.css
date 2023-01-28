@@ -1,0 +1,31 @@
+.testimonialCard {
+  width: 150px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 0 20px;
+}
+
+.testimonialCard-title,
+.testimonialCard-user, .testimonialCard-text {
+  font-size: 12px;
+}
+
+.testimonialCard-title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.testimonialCard-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonialCard-user img {
+  width: 80px;
+}
