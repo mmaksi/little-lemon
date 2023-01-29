@@ -1,21 +1,19 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Hero from "./pages/Hero";
-import Menu from "./pages/Menu";
-import Testimonials from "./pages/Testimonials";
+import Home from "./pages/Home";
+import Reservation from "./pages/Reservation";
+import UserDetails from "./pages/UserDetails";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Menu />
-      <Testimonials />
-      <About />
-      <Contact />
-    </>
+    <Routes>
+      <Route path="/" element={<Navbar />}>
+        <Route index element={<Home />} />
+        <Route path="reservation" element={<Reservation />} />
+        <Route path="details" element={<UserDetails />} />
+      </Route>
+    </Routes>
   );
 }
 

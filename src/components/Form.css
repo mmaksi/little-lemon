@@ -1,0 +1,75 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+select {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: white;
+}
+
+label {
+  margin: 0 10px 0 0;
+}
+
+select {
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+select option {
+  background-color: white;
+  color: var(--secondary);
+}
+
+.form__semicolon {
+  color: var(--primary);
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.form__time {
+  color: var(--primary);
+  font-size: 32px;
+  margin: 0 20px;
+  font-weight: bold;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  user-select: none; /* Standard syntax */
+}
+
+select:active,
+select:focus {
+  border: 0px;
+}
+
+.form-container__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  label {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+    color: black;
+  }
+
+  .form-container__buttons {
+    margin-bottom: 32px;
+    align-content: center;
+  }
+
+  .reservation__button {
+    margin-top: 20px;
+  }
+}

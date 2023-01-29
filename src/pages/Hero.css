@@ -41,6 +41,15 @@
   font-weight: bold;
 }
 
+.description__button:hover {
+  cursor: pointer;
+}
+
+.hero__reservation {
+  text-decoration: none;
+  color: black;
+}
+
 .hero__img {
   width: 50%;
   display: flex;

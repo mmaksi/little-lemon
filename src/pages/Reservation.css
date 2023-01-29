@@ -1,0 +1,32 @@
+.reservation {
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(73, 94, 87, 0.8)), url("../assets/foods.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.reservation__calendar {
+  opacity: 1;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .reservation {
+    background-image: none;
+    flex-direction: column;
+  }
+
+  .reservation__calendar {
+    opacity: 1;
+    padding: 16px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), url("../assets/foods.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
