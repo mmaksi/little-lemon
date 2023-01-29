@@ -7,7 +7,7 @@ const List = ({ title, list }) => {
       <h2 className="list-header">{title}</h2>
       <div className="list-links">
         {list.map((link) => {
-          return <a>{link}</a>;
+          return <span>{link}</span>;
         })}
       </div>
     </div>
