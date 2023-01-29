@@ -28,7 +28,7 @@ const Form = ({ unformattedDate }) => {
     date,
     hour,
     minutes,
-    timeDay: timeDay,
+    timeDay,
     tableNumber,
     persons,
   };
@@ -47,6 +47,11 @@ const Form = ({ unformattedDate }) => {
     e.preventDefault();
     dispatch({ type: "remove" });
     navigate("/");
+  }
+
+  function timeDayHandler() {
+    const newTimeDay = timeDay === "AM" ? "PM" : "AM" 
+    setTimeDay(newTimeDay)
   }
 
   return (
@@ -92,6 +97,7 @@ const Form = ({ unformattedDate }) => {
         </select>
         <span
           onChange={(e) => setTimeDay(e.target.value)}
+          onClick={timeDayHandler}
           className="form__time"
         >
           {timeDay}

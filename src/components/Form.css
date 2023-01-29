@@ -57,19 +57,33 @@ select:focus {
 }
 
 @media (max-width: 768px) {
+  select {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: white;
+    padding: 4px 8px;
+  }
+
   label {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     margin: 0 10px 0 0;
     color: black;
   }
 
+  .form__semicolon, .form__time {
+    font-size: 16px;
+    color: black;
+  }
+
   .form-container__buttons {
-    margin-bottom: 32px;
     align-content: center;
   }
 
   .reservation__button {
     margin-top: 20px;
+    padding: 6px 12px;
+    font-size: 16px;
   }
 }
