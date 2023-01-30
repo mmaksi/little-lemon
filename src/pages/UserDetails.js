@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ReservationContext } from "../store/reservation.context";
 import "./UserDetails.css";
@@ -106,8 +106,8 @@ const UserDetails = () => {
         persons at table {tableNumber} at {hour}:{minutes} {timeDay} {location}.
         Special occasion: {event}
       </p>
-      <button onClick={submitHandler}>BACK</button>
-      <button onClick={backHandler}>CONFIRM</button>
+      <button onClick={submitHandler}>CONFIRM</button>
+      <button onClick={backHandler}>BACK</button>
     </div>
   );
 };

@@ -1,0 +1,23 @@
+.confirmation__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; /* keeps the flex items on a single line */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px 160px;
+}
+
+.confirmation__icon {
+  font-size: 48px;
+  color: #48742c;
+}
+
+.confirmation__text {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .confirmation__container {
+    padding: 50px 32px 32px 32px;
+  }
+}

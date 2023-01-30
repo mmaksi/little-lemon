@@ -1,0 +1,21 @@
+.button {
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border-color: var(--primary);
+  margin-top: 40px;
+}
+
+.confirmation__button {
+    margin-top: 10px !important;
+}
